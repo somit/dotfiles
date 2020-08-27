@@ -35,20 +35,28 @@ alias diskspace="df -P -kHl"
 
 
 # Git
-alias gs="git status"
+alais g="git"
+alias gst="git status"
+alais glgg="git log --graph --max-count=5"
 alias gd="git diff"
-alias pull="git pull"
-alias push="git push"
-alias add="git add"
-alias commit="git commit -m"
-alias commitall="git add . && git commit -m"
-alias amend="git add . && git commit --amend --no-edit"
+alias gl="git pull"
+alias gp="git push"
+alias ga="git add"
+alias gc="git commit -m"
+alias gca="git add . && git commit -m"
+alias gca="git add . && git commit -m"
+alias gam="git add . && git commit --amend --no-edit"
+alias ggpush="git push origin $(current_branch)"
 
 
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+
+	# DNS
+alias use_google_dns='networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4'
+alias use_cloudflare_dns='networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1'
 
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
