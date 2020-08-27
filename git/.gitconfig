@@ -1,6 +1,6 @@
 [user]
-	name = Somit Srivastava
-	email = somit.pisces@gmail.com
+  name = Somit Srivastava
+  email = somit.pisces@gmail.com
 [includeIf "gitdir:~/personal/"]
   path = ~/personal/.gitconfig
 [core]
