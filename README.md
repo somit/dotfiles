@@ -6,8 +6,8 @@ These files personalize my system.
 I recommend to fork and remove whatever not needed. This is a wip.
 
 
-**Updating dotbot:**
-git submodule update --remote dotbot
+The project is using GNU Stow.
+stow -v -R -t ~ zsh git
 
 
 
