@@ -52,7 +52,6 @@ alias gitall='f(){git add . && git commit -m $1 && git push origin $(current_bra
 
 
 
-
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
