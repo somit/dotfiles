@@ -7,10 +7,10 @@ I recommend to fork and remove whatever not needed. This is a wip.
 
 
 The project is using GNU Stow.
+
+```
 stow -v -R -t ~ zsh git
-
-
-
+```
 To be explored:
  - https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 
