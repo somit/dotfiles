@@ -33,11 +33,10 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 alias diskspace="df -P -kHl"
 
-
 # Git
-alais g="git"
+alias g="git"
 alias gst="git status"
-alais glgg="git log --graph --max-count=5"
+alias glgg="git log --graph --max-count=5"
 alias gd="git diff"
 alias gl="git pull"
 alias gp="git push"
@@ -46,6 +45,10 @@ alias gc="git commit -m $1"
 alias gca="git add . && git commit -m  $1"
 alias gam="git add . && git commit --amend --no-edit"
 alias ggpush="git push origin $(current_branch)"
+alias ggpull='f(){ git pull $1 ${current_branch}};f'
+alias grh="git reset HEAD"
+alias gitall='f(){git add . && git commit -m $1 && git push origin $(current_branch)};f'
+
 
 
 
