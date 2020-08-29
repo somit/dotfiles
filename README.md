@@ -7,6 +7,9 @@ I recommend to fork and remove whatever not needed. This is a wip.
 
 
 
+To be explored:
+ - https://github.com/mathiasbynens/dotfiles/blob/main/.macos
+
 Inspired by:
  - https://github.com/paulirish/dotfiles
  - https://github.com/holman/dotfiles
