@@ -6,6 +6,7 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Binaries
+brew 'stow'
 brew 'awscli'
 brew 'bat' # "cat" on steroids
 brew 'ffmpeg'
