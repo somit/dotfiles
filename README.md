@@ -19,3 +19,4 @@ Inspired by:
  - https://github.com/holman/dotfiles
  - https://github.com/driesvints/dotfiles
  - https://gitlab.com/waterkip/dotty/
+ - https://github.com/mathiasbynens/dotfiles
