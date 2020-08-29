@@ -26,14 +26,6 @@ alias library="cd $HOME/Library"
 alias work="cd $HOME/apps"
 
 
-# Shortcuts
-alias copyssh="pbcopy < $HOME/.ssh/"
-alias reloadshell="source $HOME/.zshrc"
-alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias c="clear"
-alias diskspace="df -P -kHl"
-
 # Git
 alias g="git"
 alias gst="git status"
@@ -50,19 +42,39 @@ alias ggpull='f(){ git pull $1 ${current_branch}};f'
 alias grh="git reset HEAD"
 alias gitall='f(){git add . && git commit -m $1 && git push origin $(current_branch)};f'
 
-
-
-# Pretty print the path
-alias path='echo $PATH | tr -s ":" "\n"'
+# Shortcuts
+alias reload="exec ${SHELL} -l"
+alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias c="clear"
+alias diskspace="df -P -kHl"
 
 
 	# DNS
 alias use_google_dns='networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4'
 alias use_cloudflare_dns='networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1'
+	# Flush Directory Service cache
+alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+
+#IPS
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+	# Show active network interfaces
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+
+#Utility
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+
+#find service on port
+alias whatisrunning="netstat -vanp tcp | grep $1"
+
 
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
   source ~/.aliases.local
 fi
-
-

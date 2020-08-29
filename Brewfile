@@ -11,11 +11,15 @@ brew 'bat' # "cat" on steroids
 brew 'ffmpeg'
 brew 'git'
 brew 'grep'
+brew "mas"
+brew "gpg"
 brew 'httpie'
 brew 'mackup'
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
+brew "the_silver_searcher" # Code search https://github.com/ggreer/the_silver_searcher
+brew "wifi-password" #quicky get wifi password
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -41,13 +45,14 @@ cask 'dbngin'
 cask 'docker'
 cask 'figma'
 cask 'firefox'
-cask 'github'
+cask 'lepton'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'imageoptim'
 cask 'insomnia'
-cask 'java'
+cask 'java7'
+cask 'java8'
 cask 'mysqlworkbench'
 cask 'screenflow'
 cask 'slack'
@@ -61,10 +66,19 @@ cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
+cask "authy" #2FA
+cask "notion"
 
 # Quicklook [old mac feature alternative to check size]
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
+#cask 'qlcolorcode'
+#cask 'qlmarkdown'
+#cask 'quicklook-json'
+#cask 'quicklook-csv'
+#cask 'qlstephen'
+
+
+mas "Kindle", id: 405399194
+mas "Xcode", id: 497799835
+mas "HazeOver", id: 430798174
+mas "App Cleaner", id: 1013897218
+mas "Wallcat", id: 1000397973
