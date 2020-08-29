@@ -1,6 +1,5 @@
 # Taps
 tap 'homebrew/cask'
-tap 'homebrew/cask-eid'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
@@ -54,6 +53,7 @@ cask 'imageoptim'
 cask 'insomnia'
 cask 'java7'
 cask 'java8'
+cask 'java11'
 cask 'mysqlworkbench'
 cask 'screenflow'
 cask 'slack'
@@ -80,6 +80,7 @@ cask "notion"
 
 mas "Kindle", id: 405399194
 mas "Xcode", id: 497799835
-mas "HazeOver", id: 430798174
-mas "App Cleaner", id: 1013897218
-mas "Wallcat", id: 1000397973
+mas "Cleaner-App", id: 1013897218
+mas "Slack", id: 803453959
+mas "The Unarchiver", id: 425424353
+mas "iMovie", id:408981434

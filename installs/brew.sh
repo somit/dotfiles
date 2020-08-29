@@ -1,0 +1,1 @@
+brew bundle --file=$(DOTFILES_DIR)/installs/Brewfile
