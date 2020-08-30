@@ -20,6 +20,7 @@ brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 brew "the_silver_searcher" # Code search https://github.com/ggreer/the_silver_searcher
 brew "wifi-password" #quicky get wifi password
+brew "pandoc"
 
 # Spatie Medialibrary
 brew 'jpegoptim'
